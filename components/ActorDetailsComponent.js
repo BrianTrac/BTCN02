@@ -116,6 +116,7 @@ export const ActorDetailsComponent = {
                                 :alt="movie.title"
                                 class="img-fluid"
                                 style="width: 40px; height: 40px;"
+                                @click="$emit('showMovieDetails', movie.id)"
                             />
                         </div>
                         <div class="col-4 text-start">
